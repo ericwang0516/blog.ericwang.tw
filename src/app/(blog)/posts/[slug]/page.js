@@ -1,5 +1,3 @@
-import { getPayload } from 'payload';
-import configPromise from '@payload-config';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import RenderBlocks from '@/components/Blocks/RenderBlocks';
@@ -10,15 +8,19 @@ export default async function PostDetail({ params }) {
   const resolvedParams = await params;
   const { slug } = resolvedParams;
 
-  // 使用 Payload Local API 高效獲取資料
-  const payload = await getPayload({ config: configPromise });
-  const { docs } = await payload.find({
-    collection: 'posts',
-    where: { slug: { equals: slug } },
-    limit: 1,
-  });
-
-  const post = docs[0];
+  // 暫時使用 MOCK 資料直到 Payload CMS Schema 和 Config 設定完成
+  const post = {
+    title: '攝影・科技・旅遊：探索世界的視角',
+    category: { name: '公告' },
+    publishedAt: new Date().toISOString(),
+    heroImage: null, // 測試無首圖的情境
+    layout: [
+      {
+        blockType: 'richText',
+        contentHtml: '<p>這是一篇測試文章，當 Payload CMS 配置完成後，這裡將會被替換為真實資料。</p>',
+      }
+    ]
+  };
 
   if (!post) {
     notFound();

@@ -1,11 +1,9 @@
 import Link from 'next/link';
 import styles from './layout.module.css';
-import '../../globals.css'; // 假設有一個全局重置的 CSS
+import '../globals.css'; // 全局重置的 CSS
+import { metadata as seoMetadata } from './seo-metadata';
 
-export const metadata = {
-  title: "Eric's Blog",
-  description: "Eric's personal blog",
-};
+export const metadata = Object.assign({}, seoMetadata);
 
 export default function BlogLayout({ children }) {
   return (
