@@ -1,0 +1,25 @@
+{
+    "name": "eric-blog",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "next": "15.4.11",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
+        "payload": "latest",
+        "@payloadcms/next": "latest",
+        "@payloadcms/richtext-lexical": "latest",
+        "@payloadcms/db-sqlite": "latest",
+        "graphql": "^16.8.1"
+    },
+    "devDependencies": {
+        "eslint": "^9.0.0",
+        "eslint-config-next": "^15.0.0"
+    }
+}
