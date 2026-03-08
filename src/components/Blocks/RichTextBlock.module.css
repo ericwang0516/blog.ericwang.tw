@@ -1,0 +1,66 @@
+.richTextBlock {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.richTextBlock p {
+    margin-bottom: 1.5rem;
+}
+
+.richTextBlock h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    letter-spacing: -0.02em;
+}
+
+.richTextBlock h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.richTextBlock ul,
+.richTextBlock ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.richTextBlock li {
+    margin-bottom: 0.5rem;
+}
+
+.richTextBlock a {
+    color: #0070f3;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.richTextBlock a:hover {
+    text-decoration: none;
+}
+
+.richTextBlock blockquote {
+    border-left: 4px solid #1a1a1a;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #555;
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.richTextBlock img {
+    border-radius: 8px;
+    margin: 2rem 0;
+    max-width: 100%;
+    height: auto;
+}

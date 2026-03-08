@@ -1,0 +1,69 @@
+.foodTravelBlock {
+    background-color: #fafafa;
+    border-radius: 12px;
+    padding: 2.5rem;
+    border: 1px solid #f0f0f0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.rating {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.starFilled {
+    color: #f5a623;
+    font-size: 1.25rem;
+}
+
+.starEmpty {
+    color: #e0e0e0;
+    font-size: 1.25rem;
+}
+
+.ratingValue {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.5rem;
+}
+
+.mapLink {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0070f3;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: opacity 0.2s ease;
+}
+
+.mapLink:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .foodTravelBlock {
+        padding: 1.5rem;
+    }
+}
