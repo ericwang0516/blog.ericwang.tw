@@ -1,4 +1,4 @@
-// 這是基礎的 Sitemap 生成，後續可根據 Payload API 獲取動態文章資料
+// SITEMAP生成器
 export default async function sitemap() {
   const baseUrl = 'https://blog.ericwang.tw';
 
@@ -28,4 +28,4 @@ export default async function sitemap() {
       priority: 0.8,
     },
   ];
-}
+};
